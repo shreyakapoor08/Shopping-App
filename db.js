@@ -41,6 +41,11 @@ const Product = db.define('products', {
     }
 })
 
+//to make sure database is created
+db.sync()
+    .then(() => console.log("database has been synced"))
+    .catch((err) => console.error("Error creating database"))
+
 exports = module.exports = {
     User, Product //exporting user class and product class
 }
