@@ -1,0 +1,24 @@
+{
+  "name": "sequelizeexpressshoppingappp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyakapoor08/Shopping-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyakapoor08/Shopping-App/issues"
+  },
+  "homepage": "https://github.com/shreyakapoor08/Shopping-App#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.1.0"
+  }
+}
