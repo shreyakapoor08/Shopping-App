@@ -24,7 +24,7 @@ route.post('/', (req, res) => {
     //we will create a new user
 
     User.create({ //it takes a new User object
-        name: req.body.name //fetching from req,body.name
+        name: req.body.name //fetching from req.body.name
     }) .then((user) => {
         res.status(201).send(user)
     }).catch((err) => {
