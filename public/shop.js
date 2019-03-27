@@ -1,8 +1,19 @@
+
 function fetchProducts (done) {
     $.get('/api/products', function (data) {
         done(data) //this data is all the data that we have fetched
     })
 } //it sends a get req to the path and returns an array of products each of them being a JSON object
+
+function addProduct (name, manuf, price, done) {
+    $.post('/api/products', {
+        name: name,
+        manufacturer: manuf,
+        price: price
+    }, function (data) {
+        done(data)
+    })
+}
 
 function createProductCard (product) {
     return $(` 
