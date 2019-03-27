@@ -1,9 +1,8 @@
-
 function fetchProducts (done) {
     $.get('/api/products', function (data) {
         done(data) //this data is all the data that we have fetched
     })
-}
+} //it sends a get req to the path and returns an array of products each of them being a JSON object
 
 function createProductCard (product) {
     return $(` 
@@ -18,18 +17,4 @@ function createProductCard (product) {
        </div>
     </div> `
     )
-}
-
-$(function () {
-
-    let productList = $('#product-list')
-    
-    fetchProducts(function (products) {
-        productList.empty()
-        for (product of products) {
-            productList.append(createProductCard(products))
-        }
-    })
-})
-
-//we will make our function into our dollar function which makes it load after the window is loaded
+} //this function takes a product object and returns how the product card going to look like
