@@ -6,7 +6,6 @@ $(function () {
 
     $('#btnProductAdd').click(function () {
         //when button is clicked we will do something
-
         addProduct(
             productName.val(),
             productManufacturer.val(),
